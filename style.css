@@ -2,8 +2,7 @@
 @font-face {
     font-family: 'harry_potter';
     src:  url('./harry_potter.TTF')
-  }
-
+}
 
 
 
@@ -50,28 +49,39 @@ p {
 }
 
 
+html {
+    --color: white;
+    --roundness: 0;
+    --fromBottom: 10vh;
+}
+
+
 #color-ctn {
     grid-column: 1;
 }
-
-#color-ctn .ball {
-
+#color-ctn p {
+    color: var(--color);
 }
+#color-ctn .ball {
+    background: var(--color);
+}
+
 
 #shapeshift-ctn {
     grid-column: 2;
 }
 
 #shapeshift-ctn .ball {
-
+    border-radius: var(--roundness);
 }
+
 
 #levitate-ctn {
     grid-column: 3;
 }
 
 #levitate-ctn .ball {
-
+    bottom: var(--fromBottom);
 }
 
 
